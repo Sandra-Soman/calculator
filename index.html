@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,45 +12,124 @@
 </head>
 
 <body>
-    <div class="container border bg-secondary w-25 mt-5">
-        <!-- <h1>CASIO</h1> -->
+    <div class="col-0"></div>
+    <div class="col-6 container border bg-dark  w-25 mt-5">
+        <h1 class="center bg-dark text-light">Calculator</h1>
         <form action="">
-            <input id="result" type="text" class="form-control">
+            <input id="result" type="text" class="form-control mt-3">
         </form>
     </div>
-    <div class="container border bg-light w-25">
-        <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-            <button type="button" name="clear" onclick="allClear()" class="btn btn-outline-dark">AC</button>
-            <button type="button" name="cancel" onclick="backSpace()" class="btn btn-outline-dark">&#9003</button>
-            <button type="button" name="Modulus" onclick="displayNum('%')" class="btn btn-outline-dark" value="%">%</button>
-            <button type="button" name="division" onclick="displayNum('/')" class="btn btn-outline-dark" value="/">/</button>
+    <div class="col-0"></div>
+    <div class="container border bg-dark w-25">
+        <div class="container btn-group btn-group-lg mt-4" role="group" aria-label="Large button group">
+              <div class="col-3 container w-25">
+                <button type="button" name="clear" onclick="allClear()"
+                    class="me-3 btn btn-outline-dark bg-light w-100">AC</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="cancel" onclick="backSpace()"
+                    class="me-3 btn btn-outline-dark bg-light w-100">&#9003</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Modulus" onclick="displayNum('%')"
+                    class="me-3 btn btn-outline-dark bg-warning w-100" value="%">%</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="division" onclick="displayNum('/')"
+                    class="me-3 btn btn-outline-dark bg-warning w-100" value="/">/</button>
+
+            </div>
         </div>
         <br>
-        <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-            <button type="button" name="Seven" onclick="displayNum(7)" class="btn btn-outline-dark" value="7">7</button>
-            <button type="button" name="Eight" onclick="displayNum(8)" class="btn btn-outline-dark" value="8">8</button>
-            <button type="button" name="Nine" onclick="displayNum(9)" class="btn btn-outline-dark" value="9">9</button>
-            <button type="button" name="multiply" onclick="displayNum('*')" class="btn btn-outline-dark" value="*">*</button>
+        <div class="container btn-group btn-group-lg mt-3" role="group" aria-label="Large button group">
+            <div class="col-3 container w-25">
+                <button type="button" name="Seven" onclick="displayNum(7)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="7">7</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Eight" onclick="displayNum(8)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="8">8</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Nine" onclick="displayNum(9)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="9">9</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="multiply" onclick="displayNum('*')"
+                    class="me-3 btn btn-outline-dark bg-warning w-100" value="">*</button>
+
+            </div>
         </div>
         <br>
-        <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-            <button type="button" name="Four" onclick="displayNum(4)" class="btn btn-outline-dark" value="4">4</button>
-            <button type="button" name="Five" onclick="displayNum(5)" class="btn btn-outline-dark" value="5">5</button>
-            <button type="button" name="Six" onclick="displayNum(6)" class="btn btn-outline-dark" value="6">6</button>
-            <button type="button" name="Substract" onclick="displayNum('-')" class="btn btn-outline-dark" value="subtract">-</button>
+        <div class="container btn-group btn-group-lg mt-3" role="group" aria-label="Large button group">
+            <div class="col-3 container w-25"><button type="button" name="Four" onclick="displayNum(4)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="4">4</button></div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Five" onclick="displayNum(5)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="5">5</button>
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Six" onclick="displayNum(6)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="6">6</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Substract" onclick="displayNum('-')"
+                    class="me-3 btn btn-outline-dark bg-warning w-100" value="subtract">-</button>
+
+            </div>
         </div>
         <br>
-        <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-            <button type="button" name="One" onclick="displayNum(1)" class="btn btn-outline-dark" value="1">1</button>
-            <button type="button" name="Two" onclick="displayNum(2)" class="btn btn-outline-dark" value="2">2</button>
-            <button type="button" name="Three" onclick="displayNum(3)" class="btn btn-outline-dark" value="3">3</button>
-            <button type="button" name="Addition" onclick="displayNum('+')" class="btn btn-outline-dark" value="+">+</button>
+        <div class="container btn-group btn-group-lg mt-3" role="group" aria-label="Large button group">
+            <div class="col-3 container w-25">
+                <button type="button" name="One" onclick="displayNum(1)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="1">1</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Two" onclick="displayNum(2)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="2">2</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Three" onclick="displayNum(3)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="3">3</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Addition" onclick="displayNum('+')"
+                    class="me-3 btn btn-outline-dark bg-warning w-100" value="+">+</button>
+
+            </div>
         </div>
         <br>
-        <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-            <button type="button" name="Zero" onclick="displayNum(0)" class="btn btn-outline-dark" value="0">0</button>
-            <button type="button" name="Point" onclick="displayNum('.')" class="btn btn-outline-dark" value="Point">.</button>
-            <button type="button" name="Equal" onclick="evalExpr()" class="btn btn-outline-dark" value="Equal">=</button>
+        <div class="container btn-group btn-group-lg mt-3 mb-4" role="group" aria-label="Large button group">
+            <div class="col-3 container w-25">
+                <button type="button" name="Zero" onclick="displayNum(0)"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="0">0</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Addition" onclick="displayNum('00')"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="00">00</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Point" onclick="displayNum('.')"
+                    class="me-3 btn btn-outline-dark bg-light w-100" value="Point">.</button>
+
+            </div>
+            <div class="col-3 container w-25">
+                <button type="button" name="Equal" onclick="evalExpr()"
+                    class="me-3 btn btn-outline-dark bg-success w-100" value="Equal">=</button>
+
+            </div>
         </div>
         <br>
     </div>
